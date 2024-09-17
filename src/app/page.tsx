@@ -1,20 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
+import MarkdownForm from "./_components/markdown-form";
 
 export default function Home() {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-between">
       <main className="flex flex-col flex-grow justify-center items-center m-5">
         <h1 className="text-3xl font-semibold">Markdown to PDF</h1>
-        <div className="space-y-3 text-center">
-          <h2>Convert your markdown text!</h2>
-          <Textarea
-            className="w-[720px] h-[700px] resize-none"
-            placeholder="Start pasting..."
-          />
-          <Button className="w-40">Convert</Button>
-        </div>
+        <MarkdownForm />
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
